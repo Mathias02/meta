@@ -1,0 +1,54 @@
+.advert{
+  padding: 1px;
+  
+  @include container;
+  background-color: lighten($primary-color, 50);
+
+
+  @include mq(30em){
+   padding: .5rem;
+   height: auto;
+  }
+
+  h1{
+    text-align: center;
+    font-family: $ff-ss;
+    font-size: 1.2rem;
+    color: $primary-color;
+    mix-blend-mode: darken;
+
+    @include mq(30em){
+      font-size: 2rem;
+    }
+
+  }
+  img{
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: $white;
+
+  }
+}
+.adver{
+  display: grid;
+  grid-gap: 10px;
+  padding: 5px;
+
+
+  @include mq(30em){
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.button{
+  width: 150px;
+  background-color: $gray;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+
+  
+}

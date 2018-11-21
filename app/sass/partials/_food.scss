@@ -1,0 +1,64 @@
+#food{
+  padding-top: 2rem;
+  margin-top: 2rem;
+  background-color: lighten($primary-color, 50);
+
+  @include mq(30em){
+    padding-top: 2rem;
+    height: auto;
+    margin-top: 2rem;
+    
+ }
+
+  .meter{
+    padding: 5px;
+
+    @include mq(30em){
+     padding: 10px;
+      }
+  }
+
+.equip{
+  display: grid;
+  grid-gap: 10px;
+ 
+
+  @include mq(30em){
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: 1fr;
+  }
+
+  .equipo{
+  margin: 0 auto;
+    
+  .divmg{
+    width: 100%;
+    margin-left: 25px;
+
+    @include mq(30em){
+    width: 75%;
+     margin: 0 auto;
+    }
+
+    .pol, .pole, .ply{
+      width: 75%;
+      border-radius: 50%;
+  
+      &:after{
+        content: "";
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+   
+  }
+
+}
+  
+
+  
+
+    
+  }
+
+}

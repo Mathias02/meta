@@ -1,0 +1,67 @@
+#function{
+  @include container;
+  padding: 1px;
+  background-color: lighten($primary-color, 50);
+
+  @include mq(30em){
+   padding-top: 2.5rem;
+   height: auto;
+   margin-top: -1rem;
+ }
+
+  img{
+    width: 100%;
+  }
+  h1{
+    text-align: center;
+    color: $primary-color;
+    mix-blend-mode: darken;
+    font-family: $ff-ss;
+    font-size: 1.4rem;
+  
+
+    @include mq(30em){
+     font-size: 2rem;
+    
+   }
+}
+  }
+  .main-fun{
+    margin-top: 2.5rem;
+    padding: 0;
+    padding: 10px;
+
+    .fun{
+      display: grid;
+      grid-template-areas:
+      "fun1"
+      "fun2"
+      "fun3";
+     
+      grid-gap: 10px;
+      
+
+      @include mq(30em){
+        grid-template-areas:
+        'fun1  fun1 fun2 fun2 fun3 fun3';
+        grid-template-columns: repeat(6, 2fr);
+      }
+
+      .fun-1{
+        grid-area: fun1;
+       
+      }
+      .fun-2{
+        grid-area: fun2;
+       
+      }
+      .fun-3{
+        grid-area: fun3;
+        
+      }
+    }
+    .serv{
+      width: calcul(100%-40%);
+    }
+  }
+  

@@ -1,0 +1,147 @@
+.header{
+  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 10%;
+  z-index: 1;
+
+
+.main-header{
+  display: grid;
+  grid-gap: 2px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: $black;
+
+    @include mq(30em){
+      grid-template-columns: 1fr 5fr;
+      grid-template-rows: 60px;
+    }
+a{
+  text-decoration: none;
+  color: $white;
+}
+    .logo{
+      color: $white;
+      padding: 10px;
+      height: 45px;
+      margin: 5px 5px;
+
+      @include mq(30em){
+        grid-column: span 1;
+        grid-row: 1;
+        margin: 10px 20px;
+       
+       }
+    }
+
+      .tick{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        color: $white;
+        cursor: pointer;
+        font-size: 18px;
+        width: 20px;
+      
+         
+        @include mq(30em){
+          visibility: hidden;
+          }
+      }
+      .tog{
+        position: absolute;
+        left: -999px;
+      }
+      #toggler{
+
+        &:checked ~ .main-nav{
+          display: block;
+        }
+      }
+    
+
+    .main-nav{
+     padding: 0;
+     display: none;
+
+      @include mq(30em){
+        grid-row: 1;
+        display: inline-block;
+       }
+
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        @include mq(30em){
+          display: flex;
+           }  
+
+        li{
+          border-bottom: 1px solid white;
+
+
+          @include mq(30em){
+          flex: 1;
+          border: none;
+      }
+           
+
+           a{
+             text-align: center;
+             display: block;
+             width: 100%;
+             padding: 10px;
+             line-height: 20px;
+             text-transform: capitalize;
+            
+
+             @include mq(30em){
+              line-height: 40px;
+             }
+           
+          }
+           
+           ul{
+             padding: 0;
+             margin: 0;
+             display: none;
+             background-color: $gray;
+    
+            
+
+             li{
+              
+              padding: 2px;
+               @include mq(30em){
+                 padding: 2px;
+                border-top: 1px solid $white;
+                 }
+      
+
+               a{
+                 width: 100%;
+                
+
+                 @include mq(30em){
+                  line-height: 20px;
+                   }
+                }
+      }
+      
+    }
+
+    &:hover{
+      background-color: lighten($black, 30);
+      ul{
+        display: block;
+        background-color: lighten($black, 55);
+      }
+   }
+  }
+}
+}
+}
+}

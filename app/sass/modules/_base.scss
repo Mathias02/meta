@@ -1,0 +1,52 @@
+
+:root{
+  background-color: $black;
+  background-image: url("../img/0.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: $ff-s;
+  font-size: $fs;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
+  font-family: $ff-s;
+  font-size: 1em;
+  color: $gray;
+  @include mq(30em){
+    font-size: 3rem;
+  }
+}
+
+h2{
+  font-family: $ff-ss;
+  font-size: 1em;
+  color: darken($primary-color, 25%);
+
+  @include mq(30em){
+    font-size: 1.5rem;
+  }
+}
+ 
+img{
+  max-width: 100%;
+}
+.main{
+  margin-top: 13%;
+
+  @include mq(30em){
+    margin-top: 5%;
+  }
+  
+}

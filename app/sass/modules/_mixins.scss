@@ -1,0 +1,19 @@
+@mixin container($width: 80%){
+  width: $width;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+@mixin clearfix {
+  &:after{
+    content: '';
+    display: block;
+    clear: left;
+  }
+}
+
+@mixin mq($width:60em) {
+  @media(min-width: $width){
+    @content;
+  }
+  
+}

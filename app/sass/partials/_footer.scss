@@ -1,0 +1,128 @@
+.main-footer{
+  @include container;
+  background-color: $black;
+  padding: 2rem 30px;
+
+  @include mq(30em){
+    margin-top: 2px;
+    padding-top: 2.5rem;
+    }
+
+  a{
+    text-decoration: none;
+    color: darken($white, 10);
+  }
+  h4{
+    color: $gray;
+    font-size: 1.2rem;
+  }
+
+  form{
+    text-align: right;
+
+    :focus{
+      background-color: $gray;
+      color: red;
+      font-size: 5px;
+    }
+
+    .search{
+      width: 80%;
+      padding: 5px;
+      border: 1px solid $gray;
+
+      @include mq(30em){
+      width: 25%;
+        }
+    }
+    .submit{
+      padding: 3px;
+      width: 50px;
+      text-align: center;
+      margin-left: -5px;
+      background-color: $gray;
+      cursor: pointer;
+    }
+    }
+
+  .foot{
+    display: grid;
+    grid-gap: 3px;
+
+    @include mq(30em){
+      grid-template-columns: 1fr 2fr 2fr;
+      grid-template-rows: 1fr;
+    }
+
+    .footer-1, .footer-2{
+      padding: .5rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1em auto;
+
+
+      a{
+        display: block;
+        font-family: $ff-ss;
+        margin-bottom: 15px;
+        margin-left: 0;
+
+        &:hover{
+          color: $gray;
+        }
+      }
+
+    }
+      .footer-3{
+        margin: 0 auto;
+
+        nav{
+         padding: 5rem 0;
+
+         @include mq(30em){
+          padding: 10rem 0;
+          }
+
+          ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li{
+              width: 25px;
+              height: 25px;
+              line-height: 25px;
+              text-align: center;
+              border-radius: 50%;
+              background-color: $white;
+              margin-left: 8px;
+              margin-top: -0px;
+              float: left;
+              cursor: pointer;
+              border: 2px solid $light-pink;
+
+              @include mq(30em){
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+              margin: 10px;
+              }
+              &:hover{
+                background-color: $gray;
+              }
+
+              .fab{
+                color: $black;
+                font-size: 1rem;
+               
+              }
+            }
+          }
+        }
+      }
+
+    
+   
+  }
+}

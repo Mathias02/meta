@@ -1,0 +1,117 @@
+.banner{
+  @include container;
+  padding: 0;
+
+
+.cat{
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  padding-top: -.7rem;
+
+  
+  @include mq(30em){
+    margin-top: -1rem;
+  }
+}
+
+.care{
+  width: 90%;
+  visibility: hidden;
+
+  @include mq(30em){
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+ }
+}
+
+.banner-north, .banner-south, .banner-east, .banner-west, .banner-end{
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  @include mq(30em){
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+}
+.banner-north{
+  background-image: url(../img/9.jpg);
+  
+}
+.banner-south{
+  background-image: url(../img/catering.jpg);
+  animation: lay2 20s infinite;
+}
+.banner-east{
+  background-image: url(../img/2.jpg);
+  animation: lay3 20s infinite;
+}
+.banner-west{
+  background-image: url(../img/1.jpg);
+  animation: lay4 20s infinite;
+}
+.banner-end{
+  background-image: url(../img/10.jpg);
+  animation: lay5 20s infinite;
+}
+@keyframes lay2{
+  0%{opacity: 0;}
+  10%{opacity: 0;}
+  20%{opacity: 1;}
+  30%{opacity: 1;}
+  40%{opacity: 0;}
+  50%{opacity: 0;}
+  60%{opacity: 0;}
+  70%{opacity: 0;}
+  80%{opacity: 0;}
+  90%{opacity: 0;}
+  100%{opacity: 0;}
+}
+@keyframes lay3{
+  0%{opacity: 0;}
+  10%{opacity: 0;}
+  20%{opacity: 0;}
+  30%{opacity: 0;}
+  40%{opacity: 1;}
+  50%{opacity: 1;}
+  60%{opacity: 0;}
+  70%{opacity: 0;}
+  80%{opacity: 0;}
+  90%{opacity: 0;}
+  100%{opacity: 0;}
+}
+@keyframes lay4{
+  0%{opacity: 0;}
+  10%{opacity: 0;}
+  20%{opacity: 0;}
+  30%{opacity: 0;}
+  40%{opacity: 0;}
+  50%{opacity: 0;}
+  60%{opacity: 1;}
+  70%{opacity: 1;}
+  80%{opacity: 0;}
+  90%{opacity: 0;}
+  100%{opacity: 0;}
+}
+@keyframes lay5{
+  0%{opacity: 0;}
+  10%{opacity: 0;}
+  20%{opacity: 0;}
+  30%{opacity: 0;}
+  40%{opacity: 0;}
+  50%{opacity: 0;}
+  60%{opacity: 0;}
+  70%{opacity: 0;}
+  80%{opacity: 1;}
+  90%{opacity: 1;}
+  100%{opacity: 0;}
+}
+}
