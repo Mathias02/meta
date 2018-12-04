@@ -20,10 +20,10 @@
   form{
     text-align: right;
 
-    :focus{
+    &:focus{
       background-color: $gray;
       color: red;
-      font-size: 5px;
+      
     }
 
     .search{

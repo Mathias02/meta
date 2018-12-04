@@ -728,10 +728,9 @@ img {
     font-size: 1.2rem; }
   .main-footer form {
     text-align: right; }
-    .main-footer form :focus {
+    .main-footer form:focus {
       background-color: #86827f;
-      color: red;
-      font-size: 5px; }
+      color: red; }
     .main-footer form .search {
       width: 80%;
       padding: 5px;
