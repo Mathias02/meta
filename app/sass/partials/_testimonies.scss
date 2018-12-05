@@ -1,14 +1,13 @@
 .testimony{
-  padding: 1px;
+  padding: 8px;
   @include container;
   background-color: lighten($primary-color, 50);
   
 
 
   @include mq(30em){
-   padding: .5rem 0 0;
-   height: auto;
-   margin-top: -1.5rem;
+   padding: 14px 6px;
+   
   }
 
 
@@ -16,9 +15,8 @@
     text-align: center;
     font-family: $ff-ss;
     font-size: 1rem;
-    padding: 5px;
+    padding: 3px;
     color: $primary-color;
-    mix-blend-mode: darken;
 
     @include mq(30em){
       font-size: 2rem;

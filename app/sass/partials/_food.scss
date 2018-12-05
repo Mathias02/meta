@@ -1,14 +1,11 @@
 #food{
-  padding-top: 2rem;
-  margin-top: 2rem;
+ 
   background-color: lighten($primary-color, 50);
 
   @include mq(30em){
-    padding-top: 2rem;
-    height: auto;
-    margin-top: 2rem;
-    
- }
+    padding: 25px 6px;
+    margin-bottom: -28px;
+  }
 
   .meter{
     padding: 5px;

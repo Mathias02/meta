@@ -1,10 +1,6 @@
 
 :root{
-  background-color: $black;
-  background-image: url("../img/0.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: lighten($gray, 40);
 }
 
 *{

@@ -1,12 +1,11 @@
 #function{
   @include container;
-  padding: 1px;
+  padding: 8px;
   background-color: lighten($primary-color, 50);
 
   @include mq(30em){
-   padding-top: 2.5rem;
-   height: auto;
-   margin-top: -1rem;
+    padding: 13px 6px;
+    margin-top: -2px;
  }
 
   img{
@@ -17,19 +16,21 @@
     color: $primary-color;
     mix-blend-mode: darken;
     font-family: $ff-ss;
-    font-size: 1.4rem;
+    font-size: 1rem;
   
 
     @include mq(30em){
      font-size: 2rem;
-    
-   }
+    }
 }
   }
   .main-fun{
-    margin-top: 2.5rem;
-    padding: 0;
-    padding: 10px;
+    padding: 1px;
+    background-color: lighten($primary-color, 50);
+
+    @include mq(30em){
+      padding: 20px;
+     }
 
     .fun{
       display: grid;

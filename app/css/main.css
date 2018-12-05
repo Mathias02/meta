@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Old+Standard+TT|Open+Sans");
 :root {
-  background-color: #000000;
-  background-image: url("../img/0.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background-color: #e9e8e8; }
 
 * {
   box-sizing: border-box; }
@@ -292,8 +288,7 @@ img {
   background-color: #f7f4f1; }
   @media (min-width: 30em) {
     .advert {
-      padding: .5rem;
-      height: auto; } }
+      padding: 14px 6px; } }
   .advert h1 {
     text-align: center;
     font-family: "Open Sans";
@@ -324,23 +319,20 @@ img {
     margin-bottom: 5px; }
 
 .testimony {
-  padding: 1px;
+  padding: 8px;
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
   background-color: #f7f4f1; }
   @media (min-width: 30em) {
     .testimony {
-      padding: .5rem 0 0;
-      height: auto;
-      margin-top: -1.5rem; } }
+      padding: 14px 6px; } }
   .testimony h1 {
     text-align: center;
     font-family: "Open Sans";
     font-size: 1rem;
-    padding: 5px;
-    color: #997950;
-    mix-blend-mode: darken; }
+    padding: 3px;
+    color: #997950; }
     @media (min-width: 30em) {
       .testimony h1 {
         font-size: 2rem; } }
@@ -378,13 +370,12 @@ img {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 1px;
+  padding: 8px;
   background-color: #f7f4f1; }
   @media (min-width: 30em) {
     #function {
-      padding-top: 2.5rem;
-      height: auto;
-      margin-top: -1rem; } }
+      padding: 13px 6px;
+      margin-top: -2px; } }
   #function img {
     width: 100%; }
   #function h1 {
@@ -392,15 +383,17 @@ img {
     color: #997950;
     mix-blend-mode: darken;
     font-family: "Open Sans";
-    font-size: 1.4rem; }
+    font-size: 1rem; }
     @media (min-width: 30em) {
       #function h1 {
         font-size: 2rem; } }
 
 .main-fun {
-  margin-top: 2.5rem;
-  padding: 0;
-  padding: 10px; }
+  padding: 1px;
+  background-color: #f7f4f1; }
+  @media (min-width: 30em) {
+    .main-fun {
+      padding: 20px; } }
   .main-fun .fun {
     display: grid;
     grid-template-areas: "fun1" "fun2" "fun3";
@@ -422,14 +415,11 @@ img {
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0;
-  padding-top: 2.2rem;
-  height: auto;
+  padding: 8px;
   background-color: #f7f4f1; }
   @media (min-width: 30em) {
     #wedd {
-      padding-top: 1.5rem;
-      margin-top: -1.5rem; } }
+      padding: 22px 6px; } }
   #wedd img {
     width: 100%; }
   #wedd h1 {
@@ -437,13 +427,17 @@ img {
     color: #997950;
     mix-blend-mode: darken;
     font-family: "Open Sans";
-    font-size: 1.4rem; }
+    font-size: 1rem; }
     @media (min-width: 30em) {
       #wedd h1 {
         font-size: 2rem; } }
   #wedd .main-wed {
-    padding: 10px;
-    margin: 0; }
+    padding: 0;
+    background-color: #f7f4f1; }
+    @media (min-width: 30em) {
+      #wedd .main-wed {
+        padding: 13px;
+        margin-top: -2px; } }
     #wedd .main-wed .wed {
       display: grid;
       grid-gap: 10px;
@@ -462,7 +456,7 @@ img {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0;
-  background-color: #f7f4f1; }
+  background-color: #c3c3c3; }
   #about img {
     width: 100%;
     display: block; }
@@ -562,28 +556,26 @@ img {
           grid-template-columns: repeat(2, 3fr); } }
 
 #decor {
-  padding-top: 2rem;
+  padding: 1px;
   width: 80%;
   margin: 0 auto;
   max-width: 1200px;
   background-color: #f7f4f1; }
   @media (min-width: 30em) {
     #decor {
-      padding-top: 2.5rem;
-      margin-top: -1rem; } }
+      padding: 20px 6px;
+      margin-top: -3px; } }
   #decor .balloon {
-    padding: .5rem; }
+    padding: 15px;
+    background-color: #f7f4f1; }
     #decor .balloon h1 {
       text-align: center;
-      margin-bottom: 1rem;
       font-family: "Open Sans";
       color: #997950;
-      margin-bottom: 20px;
-      font-size: 1.4rem; }
+      font-size: 1rem; }
       @media (min-width: 30em) {
         #decor .balloon h1 {
-          font-size: 2rem;
-          margin-bottom: 2.5rem; } }
+          font-size: 2rem; } }
     #decor .balloon img {
       width: 100%;
       display: block; }
@@ -597,14 +589,11 @@ img {
           grid-template-rows: 1fr; } }
 
 #food {
-  padding-top: 2rem;
-  margin-top: 2rem;
   background-color: #f7f4f1; }
   @media (min-width: 30em) {
     #food {
-      padding-top: 2rem;
-      height: auto;
-      margin-top: 2rem; } }
+      padding: 25px 6px;
+      margin-bottom: -28px; } }
   #food .meter {
     padding: 5px; }
     @media (min-width: 30em) {
@@ -672,8 +661,6 @@ img {
               padding: 1rem 0; } }
         #contact .las .conta .contac form {
           width: 90%;
-          display: flex;
-          flex-wrap: wrap;
           padding: 2rem 0;
           margin: 50px auto; }
           #contact .las .conta .contac form .formdiv {
@@ -681,13 +668,15 @@ img {
             width: 100%;
             background-color: #ba9f7b;
             margin-bottom: 1rem;
-            border: 1px solid #ffffff;
-            margin-left: -5px; }
+            margin-left: -5px;
+            outline: 0; }
             #contact .las .conta .contac form .formdiv .fas {
               padding: 10px;
               text-align: center;
-              border-right: 2px solid #000000;
-              margin-left: -5px; }
+              border-right: 1px solid #000000;
+              margin-left: -5px;
+              padding: 10px;
+              outline: 0; }
               @media (min-width: 30em) {
                 #contact .las .conta .contac form .formdiv .fas {
                   padding: .8rem; } }
@@ -728,22 +717,27 @@ img {
     font-size: 1.2rem; }
   .main-footer form {
     text-align: right; }
-    .main-footer form:focus {
-      background-color: #86827f;
-      color: red; }
+    .main-footer form input {
+      border: 0;
+      outline: 0; }
+    .main-footer form :focus {
+      background-color: #e9e8e8; }
     .main-footer form .search {
-      width: 80%;
-      padding: 5px;
-      border: 1px solid #86827f; }
+      width: 70%;
+      padding: .3rem;
+      border-radius: 3px; }
       @media (min-width: 30em) {
         .main-footer form .search {
           width: 25%; } }
     .main-footer form .submit {
-      padding: 3px;
+      padding: .3rem;
+      border: 0;
       width: 50px;
+      border-radius: 2px;
+      margin-top: -1px;
       text-align: center;
       margin-left: -5px;
-      background-color: #86827f;
+      background-color: #6c6966;
       cursor: pointer; }
   .main-footer .foot {
     display: grid;
@@ -754,9 +748,6 @@ img {
         grid-template-rows: 1fr; } }
     .main-footer .foot .footer-1, .main-footer .foot .footer-2 {
       padding: .5rem 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
       margin: 1em auto; }
       .main-footer .foot .footer-1 a, .main-footer .foot .footer-2 a {
         display: block;
@@ -775,25 +766,29 @@ img {
         .main-footer .foot .footer-3 nav ul {
           list-style: none;
           padding: 0;
-          margin: 0; }
+          margin: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          @media (min-width: 30em) {
+            .main-footer .foot .footer-3 nav ul {
+              justify-content: space-around; } }
           .main-footer .foot .footer-3 nav ul li {
             width: 25px;
             height: 25px;
             line-height: 25px;
-            text-align: center;
             border-radius: 50%;
+            margin-left: 10px;
             background-color: #ffffff;
-            margin-left: 8px;
-            margin-top: -0px;
-            float: left;
             cursor: pointer;
-            border: 2px solid #D9D9F3; }
+            padding: 5px; }
             @media (min-width: 30em) {
               .main-footer .foot .footer-3 nav ul li {
-                width: 30px;
-                height: 30px;
-                line-height: 30px;
-                margin: 10px; } }
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                border-radius: 50%;
+                padding: 10px; } }
             .main-footer .foot .footer-3 nav ul li:hover {
               background-color: #86827f; }
             .main-footer .foot .footer-3 nav ul li .fab {

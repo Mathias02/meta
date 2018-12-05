@@ -1,7 +1,7 @@
 #about{
   @include container;
   padding: 0;
-  background-color: lighten($primary-color, 50);
+  background-color: lighten($lightgray, 10);
 
   img{
     width: 100%;

@@ -1,14 +1,12 @@
 #wedd{
   @include container;
-  padding: 0;
-  padding-top: 2.2rem;
-  height: auto;
+  padding: 8px;
   background-color: lighten($primary-color, 50);
 
   @include mq(30em){
-    padding-top: 1.5rem;
-    margin-top: -1.5rem;
+    padding: 22px 6px;
   }
+
   img{
     width: 100%;
    }
@@ -18,7 +16,7 @@
     color: $primary-color;
     mix-blend-mode: darken;
     font-family: $ff-ss;
-    font-size: 1.4rem;
+    font-size: 1rem;
 
     @include mq(30em){
      font-size: 2rem;
@@ -27,9 +25,13 @@
 
 
 .main-wed{
-  padding: 10px;
-  margin: 0;
+  padding: 0;
+  background-color: lighten($primary-color, 50);
  
+  @include mq(30em){
+   padding: 13px;
+   margin-top: -2px;
+  }
 
   .wed{
     display: grid;

@@ -47,8 +47,6 @@
 
         form{
           width: 90%;
-          display: flex;
-          flex-wrap: wrap;
           padding: 2rem 0;
           margin: 50px auto;
 
@@ -57,14 +55,16 @@
             width: 100%;
             background-color: lighten($primary-color, 15);
             margin-bottom: 1rem;
-            border: 1px solid $white;
             margin-left: -5px;
+            outline: 0;
 
             .fas{
               padding: 10px;
               text-align: center;
-              border-right: 2px solid $black;
+              border-right: 1px solid $black;
               margin-left: -5px;
+              padding: 10px;
+              outline: 0;
 
               @include mq(30em){
                 padding: .8rem;
